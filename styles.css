@@ -1,8 +1,8 @@
 :root {
-  --bg-night: #2a2431;
-  --bg-plum: #5d5364;
-  --bg-violet: #9487a1;
-  --bg-mist: #f4f0ec;
+  --bg-night: #342d3a;
+  --bg-plum: #74697c;
+  --bg-violet: #aea2b4;
+  --bg-mist: #f7f3ef;
   --surface-dark: rgba(255, 252, 249, 0.3);
   --surface-mid: rgba(255, 252, 249, 0.54);
   --surface-light: rgba(255, 252, 249, 0.88);
@@ -13,11 +13,11 @@
   --text-light-soft: rgba(245, 238, 232, 0.86);
   --text-dark: #39313f;
   --text-dark-soft: #6f6674;
-  --accent: #c3b8c9;
-  --accent-strong: #887b93;
-  --accent-deep: #6d6077;
-  --shadow-xl: 0 28px 72px rgba(49, 40, 55, 0.12);
-  --shadow-lg: 0 16px 38px rgba(49, 40, 55, 0.09);
+  --accent: #cdc4cf;
+  --accent-strong: #978b9f;
+  --accent-deep: #7b6f84;
+  --shadow-xl: 0 22px 54px rgba(75, 66, 82, 0.08);
+  --shadow-lg: 0 12px 28px rgba(75, 66, 82, 0.06);
   --glass-shine: inset 0 1px 0 rgba(255, 255, 255, 0.5);
   --radius-xl: 40px;
   --radius-lg: 30px;
@@ -38,10 +38,10 @@ body {
   font-family: "SF Pro TC", "PingFang TC", "Noto Sans TC", sans-serif;
   color: var(--text-light);
   background:
-    radial-gradient(circle at 14% 18%, rgba(197, 183, 205, 0.24), transparent 18%),
-    radial-gradient(circle at 84% 12%, rgba(255, 255, 255, 0.28), transparent 14%),
-    radial-gradient(circle at 50% 112%, rgba(206, 195, 186, 0.22), transparent 28%),
-    linear-gradient(180deg, #ded7d3 0%, #f3efeb 40%, #ebe5e1 100%);
+    radial-gradient(circle at 14% 18%, rgba(212, 201, 214, 0.28), transparent 18%),
+    radial-gradient(circle at 84% 12%, rgba(255, 255, 255, 0.34), transparent 14%),
+    radial-gradient(circle at 50% 112%, rgba(225, 214, 205, 0.24), transparent 28%),
+    linear-gradient(180deg, #e8e1dc 0%, #f7f3ef 40%, #f1ebe5 100%);
 }
 
 body::before {
@@ -77,7 +77,7 @@ li {
   border-radius: 999px;
   filter: blur(48px);
   pointer-events: none;
-  opacity: 0.46;
+  opacity: 0.34;
 }
 
 .orb-left {
@@ -122,11 +122,11 @@ li {
   border-radius: var(--radius-lg);
   border: 1px solid var(--stroke-soft);
   background:
-    linear-gradient(180deg, rgba(255, 252, 249, 0.94), rgba(248, 242, 237, 0.88)),
-    rgba(249, 244, 239, 0.92);
+    linear-gradient(180deg, rgba(255, 253, 251, 0.96), rgba(250, 246, 242, 0.92)),
+    rgba(251, 247, 243, 0.94);
   box-shadow: var(--shadow-lg), var(--glass-shine);
-  backdrop-filter: blur(8px) saturate(105%);
-  -webkit-backdrop-filter: blur(8px) saturate(105%);
+  backdrop-filter: blur(6px) saturate(102%);
+  -webkit-backdrop-filter: blur(6px) saturate(102%);
 }
 
 .glass-surface::before,
@@ -231,7 +231,7 @@ li {
   color: var(--text-dark);
   font-size: 0.95rem;
   font-weight: 650;
-  background: rgba(255, 252, 249, 0.72);
+  background: rgba(255, 252, 249, 0.84);
   border: 1px solid rgba(117, 104, 125, 0.1);
   transition:
     background 180ms ease,
@@ -255,9 +255,9 @@ li {
   min-height: 460px;
   box-shadow: var(--shadow-xl), var(--glass-shine);
   background:
-    radial-gradient(circle at 82% 14%, rgba(255, 255, 255, 0.42), transparent 20%),
-    radial-gradient(circle at 20% 110%, rgba(211, 201, 209, 0.44), transparent 28%),
-    linear-gradient(145deg, rgba(255, 252, 249, 0.98), rgba(243, 236, 231, 0.92));
+    radial-gradient(circle at 82% 14%, rgba(255, 255, 255, 0.5), transparent 20%),
+    radial-gradient(circle at 20% 110%, rgba(221, 212, 219, 0.46), transparent 28%),
+    linear-gradient(145deg, rgba(255, 253, 251, 0.99), rgba(246, 241, 236, 0.94));
 }
 
 .compact-hero {
@@ -322,6 +322,14 @@ h3 {
   font-size: 1.05rem;
   color: var(--text-dark-soft);
   line-height: 1.88;
+}
+
+.content-card p,
+.content-card li,
+.legal-block p,
+.legal-block li,
+.footer-card p {
+  letter-spacing: 0.01em;
 }
 
 .pill-row,
@@ -508,7 +516,7 @@ h3 {
     rgba(249, 244, 239, 0.92);
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.86),
-    0 16px 30px rgba(80, 70, 89, 0.1);
+    0 12px 22px rgba(80, 70, 89, 0.08);
 }
 
 .app-icon-image {
@@ -516,7 +524,7 @@ h3 {
   width: min(220px, 100%);
   aspect-ratio: 1 / 1;
   border-radius: 28px;
-  box-shadow: 0 16px 32px rgba(80, 70, 89, 0.14);
+  box-shadow: 0 12px 24px rgba(80, 70, 89, 0.1);
 }
 
 .content-grid {
@@ -562,7 +570,7 @@ h3 {
     rgba(248, 243, 239, 0.98);
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.88),
-    0 12px 24px rgba(80, 70, 89, 0.08);
+    0 8px 18px rgba(80, 70, 89, 0.06);
 }
 
 .soft-card::before,
@@ -629,7 +637,7 @@ h3 {
 .soft-card:hover {
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.88),
-    0 16px 28px rgba(80, 70, 89, 0.1);
+    0 10px 20px rgba(80, 70, 89, 0.07);
 }
 
 @media (max-width: 960px) {

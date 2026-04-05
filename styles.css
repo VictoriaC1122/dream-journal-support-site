@@ -475,6 +475,40 @@ h3 {
   padding: 28px 30px;
 }
 
+.icon-showcase {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(220px, 0.9fr);
+  gap: 24px;
+  align-items: center;
+  padding: 28px 30px;
+}
+
+.icon-copy p {
+  color: var(--text-dark-soft);
+}
+
+.icon-frame {
+  display: grid;
+  place-items: center;
+  padding: 18px;
+  border-radius: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.84), rgba(255, 255, 255, 0.7)),
+    rgba(255, 255, 255, 0.8);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.8),
+    0 20px 44px rgba(41, 28, 92, 0.12);
+}
+
+.app-icon-image {
+  display: block;
+  width: min(220px, 100%);
+  aspect-ratio: 1 / 1;
+  border-radius: 28px;
+  box-shadow: 0 22px 50px rgba(30, 19, 72, 0.22);
+}
+
 .content-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -592,6 +626,7 @@ h3 {
   .site-nav,
   .hero,
   .intro-band,
+  .icon-showcase,
   .content-grid,
   .summary-grid,
   .footer-links {
@@ -634,6 +669,7 @@ h3 {
   .site-nav,
   .hero,
   .intro-band,
+  .icon-showcase,
   .content-card,
   .legal-shell,
   .footer-links {

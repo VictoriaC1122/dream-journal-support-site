@@ -37,6 +37,7 @@ body {
   min-height: 100vh;
   font-family: "SF Pro TC", "PingFang TC", "Noto Sans TC", sans-serif;
   color: var(--text-light);
+  font-size: 16px;
   background:
     radial-gradient(circle at 14% 18%, rgba(212, 201, 214, 0.28), transparent 18%),
     radial-gradient(circle at 84% 12%, rgba(255, 255, 255, 0.34), transparent 14%),
@@ -69,6 +70,7 @@ h3 {
 
 p,
 li {
+  font-size: 1rem;
   line-height: 1.8;
 }
 
@@ -153,7 +155,7 @@ li {
   display: inline-flex;
   align-items: center;
   gap: 14px;
-  font-size: 1rem;
+  font-size: 0.98rem;
   font-weight: 800;
   letter-spacing: 0.02em;
   color: var(--text-dark);
@@ -229,7 +231,7 @@ li {
   padding: 10px 15px;
   border-radius: 999px;
   color: var(--text-dark);
-  font-size: 0.95rem;
+  font-size: 0.92rem;
   font-weight: 650;
   background: rgba(255, 252, 249, 0.84);
   border: 1px solid rgba(117, 104, 125, 0.1);
@@ -295,8 +297,8 @@ li {
 h1 {
   margin-bottom: 18px;
   font-family: "Iowan Old Style", "Baskerville", "Georgia", serif;
-  font-size: clamp(2.9rem, 4.7vw, 4.9rem);
-  line-height: 0.98;
+  font-size: clamp(2.35rem, 4.3vw, 3.95rem);
+  line-height: 1.02;
   letter-spacing: -0.03em;
   color: var(--text-dark);
 }
@@ -304,24 +306,24 @@ h1 {
 h2 {
   margin-bottom: 14px;
   font-family: "Iowan Old Style", "Baskerville", "Georgia", serif;
-  font-size: clamp(1.7rem, 2.3vw, 2.25rem);
-  line-height: 1.1;
+  font-size: clamp(1.5rem, 2vw, 1.95rem);
+  line-height: 1.16;
   letter-spacing: -0.02em;
   color: var(--text-dark);
 }
 
 h3 {
   margin-bottom: 10px;
-  font-size: 1.16rem;
-  line-height: 1.35;
+  font-size: 1.08rem;
+  line-height: 1.42;
   color: var(--text-dark);
 }
 
 .hero-text {
   max-width: 42rem;
-  font-size: 1.05rem;
+  font-size: 1rem;
   color: var(--text-dark-soft);
-  line-height: 1.88;
+  line-height: 1.82;
 }
 
 .content-card p,
@@ -351,7 +353,7 @@ h3 {
   min-height: 42px;
   padding: 10px 16px;
   border-radius: 999px;
-  font-size: 0.94rem;
+  font-size: 0.9rem;
   font-weight: 700;
 }
 
